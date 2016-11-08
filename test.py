@@ -55,8 +55,8 @@ class ComplexAndroidTests(unittest.TestCase):
         self.driver.find_element_by_class_name('android.widget.Button').click()
         el = self.driver.find_element_by_id('de.com.meinestadt.stadtleben:id/textView')
         self.assertEquals('Simply yours', el.text)
-        el = self.driver.find_element_by_id('de.com.meinestadt.stadtleben:id/btn_why')
-        self.assertEquals('Why Register?', el.text)
+        # el = self.driver.find_element_by_id('de.com.meinestadt.stadtleben:id/btn_why')
+        # self.assertEquals('Why Register?', el.text)
         self.driver.find_element_by_id('de.com.meinestadt.stadtleben:id/btn_close').click()
         sleep(5)
         # el = self.driver.find_element_by_accessibility_id('Views')
@@ -64,5 +64,3 @@ class ComplexAndroidTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
-#test trigger
